@@ -103,7 +103,7 @@ class OpenCartTest extends PHPUnit_Framework_TestCase {
 		// Url
 		// As we're using an old version of opencart, we'll have to include some
 		// of the missing classes locally.
-		require_once('../library/url.php');
+		require_once('system/library/url.php');
 		$url = new Url($config->get('config_url'), $config->get('config_secure') ? $config->get('config_ssl') : $config->get('config_url'));
 		$this->registry->set('url', $url);
 
